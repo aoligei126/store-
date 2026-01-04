@@ -253,7 +253,7 @@ $moban = preg_replace_callback('/\{z(\d+)\}/', function($matches) use ($random_l
     if (isset($random_letters[$len]) && is_array($random_letters[$len])) {
         $index = $letter_counters[$len] % count($random_letters[$len]);
         $letter_counters[$len]++;
-        return $random_letters[$len][$index];apps.php
+        return $random_letters[$len][$index];
     }
     
     return random_letters($len);
